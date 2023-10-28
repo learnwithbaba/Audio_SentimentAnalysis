@@ -1,0 +1,30 @@
+#Sentiment Analysis of Live Audio 
+
+1) Assembly AI
+- This can be achieved by multiple ways, Assembly Ai is one of the solution where we can run a python code and get the sentiment of each sentence with its :
+
+    {
+      "text": "I mean, I try to work out as much of it in sports, but I still have a lot left over for my real business, so.",
+      "start": 28990,
+      "end": 36390,
+      "sentiment": "NEUTRAL",
+      "confidence": 0.7168238162994385,
+      "speaker": null
+    }
+	
+2) This can be achieved in two parts:
+	(a)	- we can upload the audio file on the Assembly AI cloud, using a python code, file - "UploadAAudioFile_to_AssemblyAI".
+		- This code will return the url of uploaded file, which will be imported in another python code.
+		
+	(b) - running the code to transcript the audio file and to give the start, end index along with sentiment, confidence and speaker.
+		- File to run python code is: AssemblyAI_AudioSentimentAnalysis
+		
+# Sentiment analysis of audio ca also be achieved using python library "SentimentIntensityAnalyzer" with google's speech recognition
+		- For this we have prepared and tested the code, File "SentimentIntensityAnalyzer"
+		- This code runs on live audio. 
+		- Output of the code file is like:
+			waiting for your message...
+			Done recording
+			printing the message...
+			Your message:hi this is Harish Sharma are you listening
+			{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}
